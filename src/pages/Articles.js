@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 import { Link, useLoaderData } from 'react-router-dom';
 
 export async function loader({params}){
-  const rawData = await axios.get(`http://localhost:3001/articles`)
+  const rawData = [{"id":1,"title":"Test Title","text":"Test Text","createdAt":"2023-03-05T03:06:57.000Z","updatedAt":"2023-03-05T03:06:57.000Z"}]//await axios.get(`http://localhost:3001/articles`)
   const articlesData = rawData.data
   return {articlesData}
 }
