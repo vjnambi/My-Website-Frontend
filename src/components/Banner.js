@@ -5,10 +5,10 @@ function Banner() {
   return (
     <ul className='nav'>
         <li className='nav-item'>
-            <Link className='nav-link' to='http://localhost:3000/'>Home</Link>
+            <Link className='nav-link' to='https://vjnambi.azurewebsites.net/'>Home</Link>
         </li>
         <li className='nav-item'>
-            <Link className='nav-link' to='http://localhost:3000/articles'>Articles</Link>
+            <Link className='nav-link' to='https://vjnambi.azurewebsites.net/articles'>Articles</Link>
         </li>
     </ul>
   )

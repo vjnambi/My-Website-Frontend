@@ -20,7 +20,7 @@ function Articles() {
               <div className='row row-cols 4'>
                 {articlesData.map((n,i) => {
                   return <div key={i} className='col-3 align-items-center'>
-                    <Link style={{color: 'black', textDecorationLine: 'none'}} to={`http://localhost:3000/article/${n.id}`}>
+                    <Link style={{color: 'black', textDecorationLine: 'none'}} to={`https://vjnambi.azurewebsites.net/article/${n.id}`}>
                       <div className='card'>
                         <div className='card-body'>
                           <h5 className='card-title'>{n.title}</h5>
