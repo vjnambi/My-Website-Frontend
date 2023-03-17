@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom'
 import axios from 'axios';
 
 export async function loader({params}){
-    const rawData = await axios.get(`http://vjnambiapi.azurewebsites.net/article/${params.articleId}`)
+    const rawData = await axios.get(`https://vjnambiapi.azurewebsites.net/article/${params.articleId}`)
     const articleData = rawData.data[0]
     return {articleData}
 }
