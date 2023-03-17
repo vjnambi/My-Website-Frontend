@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 import { Link, useLoaderData } from 'react-router-dom';
 
 export async function loader({params}){
-  const rawData = await axios.get(`http://https://vjnambiapi.azurewebsites.net/articles`)
+  const rawData = await axios.get(`http://vjnambiapi.azurewebsites.net/articles`)
   const articlesData = rawData.data
   return {articlesData}
 }
