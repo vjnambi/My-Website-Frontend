@@ -15,7 +15,15 @@ function Article() {
             <Banner />
             <div className='background'>
                 <div className='main'>
-                    {articleData.title}
+                    <h2>{articleData.title}</h2>  
+                    {
+                        articleData.text.split("\n").map((n,i) => {
+                            return <>
+                                <p key={i}>{n}</p>
+                                
+                            </>                                 
+                        })
+                    }
                 </div>
             </div>
         </>
