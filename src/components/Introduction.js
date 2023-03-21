@@ -2,7 +2,7 @@ import React from 'react'
 
 function Introduction() {
   return (
-    <div>Placeholder for really cool introduction</div>
+    <div>Hey! I'm Vijay. I post here on Mondays, Wednesdays, and Fridays</div>
   )
 }
 
